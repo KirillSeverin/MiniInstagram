@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		ED3B9E362FB4AFE80004AF50 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = ED3B9E352FB4AFE80004AF50 /* RxCocoa */; };
 		ED3B9E382FB4AFE80004AF50 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ED3B9E372FB4AFE80004AF50 /* RxSwift */; };
+		ED3B9E3B2FB4B0EC0004AF50 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ED3B9E3A2FB4B0EC0004AF50 /* SnapKit */; };
+		ED3B9E3D2FB4B0EC0004AF50 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = ED3B9E3C2FB4B0EC0004AF50 /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3B9E3B2FB4B0EC0004AF50 /* SnapKit in Frameworks */,
 				ED3B9E382FB4AFE80004AF50 /* RxSwift in Frameworks */,
 				ED3B9E362FB4AFE80004AF50 /* RxCocoa in Frameworks */,
+				ED3B9E3D2FB4B0EC0004AF50 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +91,8 @@
 			packageProductDependencies = (
 				ED3B9E352FB4AFE80004AF50 /* RxCocoa */,
 				ED3B9E372FB4AFE80004AF50 /* RxSwift */,
+				ED3B9E3A2FB4B0EC0004AF50 /* SnapKit */,
+				ED3B9E3C2FB4B0EC0004AF50 /* SnapKit-Dynamic */,
 			);
 			productName = MiniInstagram;
 			productReference = ED3B9DDC2FB374EA0004AF50 /* MiniInstagram.app */;
@@ -118,6 +124,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				ED3B9E342FB4AFE80004AF50 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				ED3B9E392FB4B0EC0004AF50 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = ED3B9DDD2FB374EA0004AF50 /* Products */;
@@ -367,6 +374,14 @@
 				minimumVersion = 6.10.2;
 			};
 		};
+		ED3B9E392FB4B0EC0004AF50 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -379,6 +394,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ED3B9E342FB4AFE80004AF50 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		ED3B9E3A2FB4B0EC0004AF50 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED3B9E392FB4B0EC0004AF50 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		ED3B9E3C2FB4B0EC0004AF50 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED3B9E392FB4B0EC0004AF50 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
